@@ -1,14 +1,14 @@
 pipeline{
     agent any 
     // environment {
-    //     REPONAME = 'dhawalekartik540'
+    //     REPONAME = 'pushpakkautkar'
     //     IMAGE_NAME = 'flight-reservation-cdec-b50'
     // }
 
     stages{
         stage('checkout'){
             steps{
-                 git branch: 'main', url: 'https://github.com/dhawalekartik540-glitch/flight-reservation-app.git' 
+                 git branch: 'main', url: 'https://github.com/pushpakkautkar/flight-reservation-app'
             }
 
         }
@@ -34,8 +34,8 @@ pipeline{
             steps{
                 sh '''
                     cd FlightReservationApplication
-                    docker build -t dhawalekartik540/flight-reservation-app:latest .
-                    docker push dhawalekartik540/flight-reservation-app:latest
+                    docker build -t pushpakkautkar/flight-reservation-app:latest .
+                    docker push pushpakkautkar/flight-reservation-app:latest
                 '''
             }
         }

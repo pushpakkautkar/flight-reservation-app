@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Code-Pull'){
             steps{
-                git branch: 'main', url: 'https://github.com/dhawalekartik540-glitch/flight-reservation-app.git'    
+                git branch: 'main', url: 'https://github.com/pushpakkautkar/flight-reservation-app.git'    
             }
         }
         stage('Code-Build'){
